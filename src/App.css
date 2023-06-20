@@ -162,23 +162,3 @@ body {
 .error-message {
   color: red;
 }
-
-
-@media screen and (max-width: 600px) {
-  .search-bar input[type='text'] {
-    max-width: 100%;
-  }
-  
-  .recipe-list {
-    max-width: 100%;
-  }
-  
-  .recipe {
-    width: 100%;
-  }
-  
-  .recipe-form input[type='text'],
-  .recipe-form textarea {
-    max-width: 100%;
-  }
-}
