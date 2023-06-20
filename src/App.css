@@ -166,11 +166,11 @@ body {
 
 @media screen and (max-width: 600px) {
   .search-bar input[type='text'] {
-    max-width: 400px;
+    max-width: 100%;
   }
   
   .recipe-list {
-    max-width: 500px;
+    max-width: 100%;
   }
   
   .recipe {
@@ -179,6 +179,6 @@ body {
   
   .recipe-form input[type='text'],
   .recipe-form textarea {
-    max-width: 500px;
+    max-width: 100%;
   }
 }
