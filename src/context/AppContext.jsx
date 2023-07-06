@@ -40,7 +40,7 @@ const AppProvider = ({ children }) => {
   const deleteRecipe = async (recipeId) => {
     try {
       await axios.delete(`${backendUrl}/recipes/${recipeId}`);
-      setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== recipeId));
+      setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe._id !== recipeId));
     } catch (error) {
       console.log(error);
     }
@@ -49,10 +49,10 @@ const AppProvider = ({ children }) => {
   // Rezept Update
   const updateRecipe = async (recipeData) => {
     try {
-      await axios.put(`${backendUrl}/recipes/${selectedRecipe.id}`, recipeData);
+      await axios.put(`${backendUrl}/recipes/${selectedRecipe._id}`, recipeData);
       setRecipes((prevRecipes) => {
         return prevRecipes.map((recipe) => {
-          if (recipe.id === selectedRecipe.id) {
+          if (recipe._id === selectedRecipe._id) {
             return { ...recipe, ...recipeData };
           }
           return recipe;

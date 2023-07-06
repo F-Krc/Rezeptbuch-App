@@ -12,7 +12,7 @@ const RecipeList = () => {
         <div>No recipes available.</div> 
       ) : (
         recipes.map((recipe) => (
-          <Recipe key={recipe.id} recipe={recipe} />
+          <Recipe key={recipe._id} recipe={recipe} />
         ))
       )}
     </div>

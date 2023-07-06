@@ -25,7 +25,7 @@ const SearchBar = () => {
    {filteredRecipes.length > 0 && (
      <div className='recipe-list'>
        <h3>SuchErgebnis</h3>
-       {filteredRecipes.map((recipe) => <Recipe key={recipe.id} recipe={recipe} />)}
+       {filteredRecipes.map((recipe) => <Recipe key={recipe._id} recipe={recipe} />)}
      </div>
    )}
  </>
