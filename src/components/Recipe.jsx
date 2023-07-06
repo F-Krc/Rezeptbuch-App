@@ -13,7 +13,7 @@ const Recipe = ({ recipe }) => {
   };
 
   const handleDelete = () => {
-      deleteRecipe(recipe.id);
+      deleteRecipe(recipe._id);
   };
 
   const handleEdit = () => {
