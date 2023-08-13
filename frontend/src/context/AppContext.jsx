@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [filteredRecipes, setFilteredRecipes] = useState([]);
 
-  const backendUrl = 'http://localhost:4000';
+  const backendUrl = 'https://recipebook-api-1pfd.onrender.com';
 
   // Rezepte abrufen
   useEffect(() => {
